@@ -10,3 +10,7 @@ source bootstrap.sh
 # Install brew packages
 ./brew.sh
 ```
+
+## Overrides
+
+* Git config with `~/.gitconfig.local`.

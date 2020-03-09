@@ -40,3 +40,8 @@ if [ -f "$(brew --prefix)/opt/bash-git-prompt/share/gitprompt.sh" ]; then
   GIT_PROMPT_THEME=Solarized
   source "$(brew --prefix)/opt/bash-git-prompt/share/gitprompt.sh"
 fi
+
+# Convenience
+if [ -e $HOME/.bash_aliases ]; then
+    source $HOME/.bash_aliases
+fi

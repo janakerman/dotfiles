@@ -1,0 +1,10 @@
+[url "git@github.com:"]
+    insteadOf = https://github.com/
+[alias]
+    diffbranch = "!sh -c \"git diff $(git merge-base \"$1\" \"$2\") \"$2\"\""
+    unstage = reset HEAD --
+    last = log -1 HEAD
+[rerere]
+    enabled = true
+[include]
+    path = .gitconfig.local
