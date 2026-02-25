@@ -1,0 +1,7 @@
+# mise (runtime/tool versions)
+eval "$(mise activate zsh)"
+
+# prompt (optional)
+# eval "$(starship init zsh)"
+
+export EDITOR=code
