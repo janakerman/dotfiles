@@ -1,3 +1,4 @@
 #!/usr/bin/env bash
 set -euo pipefail
-bash "$(chezmoi source-path)/macos/defaults.sh"
+
+bash "$CHEZMOI_SOURCE_DIR/macos/defaults.sh"
