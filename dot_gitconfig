@@ -1,7 +1,7 @@
 [user]
   name = Jan Akerman
   # Use GitHub noreply to avoid leaking real email in public repos:
-  # email = janakerman@users.noreply.github.com
+  email = janakerman@users.noreply.github.com
 
 [init]
   defaultBranch = main
