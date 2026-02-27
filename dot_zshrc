@@ -1,7 +1,11 @@
 # mise (runtime/tool versions)
 eval "$(mise activate zsh)"
 
-# prompt (optional)
+# Terminal prompt style
 eval "$(starship init zsh)"
 
+# VSCode as default editor.
 export EDITOR=code
+
+# Aliases
+alias g=git

@@ -17,3 +17,70 @@
 
 [push]
   default = simple
+
+[alias]
+  # Status
+  # Short status (branch + concise changes)
+  s = status -sb
+
+  # Staging
+  # Stage specific files
+  a = add
+  # Stage all changes (tracked + untracked)
+  aa = add -A
+
+  # Commit
+  # Commit (opens editor)
+  c = commit
+  # Commit with message
+  cm = commit -m
+  # Amend last commit (edit message)
+  ca = commit --amend
+  # Amend last commit without changing message
+  cane = commit --amend --no-edit
+
+  # Push / Pull
+  # Push current branch
+  p = push
+  # Safe force push
+  pf = push --force-with-lease
+  # Pull using rebase (clean history)
+  pl = pull --rebase
+
+  # Branching
+  # List branches
+  b = branch
+  # Delete branch (safe)
+  bd = branch -d
+  # Switch branches
+  sw = switch
+  # Create and switch to new branch
+  swc = switch -c
+
+  # Log / History
+  # Condensed graph view of all branches
+  l = log --oneline --graph --decorate --all
+
+  # Diff
+  # Working tree diff
+  d = diff
+  # Staged diff
+  ds = diff --staged
+
+  # Rebase
+  # Rebase onto target
+  rb = rebase
+  # Interactive rebase
+  rbi = rebase -i
+
+  # Safety / Undo
+  # Undo last commit, keep changes staged
+  undo = reset --soft HEAD~1
+  # Unstage files
+  unstage = restore --staged
+
+  # Utility
+  # Show 5 most recently updated local branches
+  recent = "!git for-each-ref --count=5 --sort=-committerdate refs/heads/ --format='%(committerdate:short) %(refname:short)'"
+  # Snapshot all changes with timestamped WIP commit
+  wip = "!git add -A && git commit -m \"WIP: $(date +'%Y-%m-%d %H:%M')\""
