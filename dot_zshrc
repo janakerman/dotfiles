@@ -7,5 +7,9 @@ eval "$(starship init zsh)"
 # VSCode as default editor.
 export EDITOR=code
 
+# 1password agent for SSH keys
+# symlink set up in .chezmoiscripts/
+export SSH_AUTH_SOCK="$HOME/.1password/agent.sock"
+
 # Aliases
 alias g=git
