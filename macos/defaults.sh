@@ -59,6 +59,19 @@ defaults write com.apple.AppleMultitouchTrackpad Clicking -bool true
 defaults write com.apple.desktopservices DSDontWriteNetworkStores -bool true
 
 #######################################
+# Sleep / Battery behaviour
+#######################################
+
+# Disable Power Nap (prevents background wakeups)
+sudo pmset -a powernap 0
+
+# Disable wake on network access
+sudo pmset -a womp 0
+
+# Disable proximity wake (Apple Watch / nearby device wake)
+sudo pmset -a proximitywake 0
+
+#######################################
 # Restart affected services
 #######################################
 
